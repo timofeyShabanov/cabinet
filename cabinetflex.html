@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Особистий Кабінет</title>
+    <link rel="icon" type="image/png" href="./images/logo.png" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left column -->
+        <div class="box left-column">
+            <div class="logo">
+                <img class="icon" src="images/logo.png" alt="logo"/>
+            </div>
+            <div class="left-column__icon">
+                <img class="icon" src="images/icons/science.svg" alt="science"/>
+            </div>
+            <div class="left-column__icon">
+                <img class="icon" src="images/icons/prescriptions.svg" alt="prescriptions"/>
+            </div>
+            <div class="left-column__icon">
+                <img class="icon" src="images/icons/chat.svg" alt="chat"/>
+            </div>
+            <div class="left-column__icon logout-icon">
+                <img class="icon" src="images/icons/logout.svg" alt="logout"/>
+            </div>
+        </div>
+        <!-- //Left column -->
+
+        <div class="right-column-container">
+            <!-- Header -->
+            <div class="header">
+                <div class="box search-container">
+                    <input id="search-input" type="text" placeholder="Пошук" />
+                    <button onclick="inputSearch()">
+                        <img class="icon" src="images/icons/search.svg" alt="search" />
+                    </button>
+                </div>
+                <div class="box bell-container">
+                    <img class='icon' src="images/icons/bell.svg" alt="bell"/>
+                </div>
+                <div class="profile-card box">
+                    <img class="check-mark-icon" src="images/icons/checkMark.svg" alt="checkMark"  />
+                    <span class="user-info">Іван Іванович</span>
+                    <a href="#" class="avatar">І І</a>
+                </div>
+            </div>
+            <!-- //Header -->
+
+            <!-- Main section -->
+            <div class="main-container">
+                <div class="main-container__column1">
+                    <div class="box content main-container__column1__content1">
+                        <div class="main-container__column1__content1__text text32">Назва статті</div>
+                        <div class="main-container__column1__content1__text text16">Часто клієнтами косметологів стають люди, що страждають проблемами чи захворюваннями зі шкірою, з якими боротися самостійно неможливо</div>
+                        <div class="text20">Іван Іванович</div>
+                        <div class="main-container__column1__content1__text text18">Посада</div>
+                        <div class="main-container__column1__content1__arrow">
+                            <img src="images/icons/arrow3.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box content">
+                        <div class="main-container__column1__content2__header">
+                            <div class="text32">Дисконтна картка</div>
+                            <img class="main-container__column1__content2__header__arrow" src="images/icons/arrow5.svg" alt="arrow">
+                        </div>
+                        <p class="text16 green">В нас наявна система знижок</p>
+                    </div>
+                    <div class="box content">
+                        <div class="main-container__column1__content3">
+                            <div class="text32">Онлайн консультація</div>
+                            <div class="text16 main-container__column1__content3__description">Якщо ви хочите зекономити час то маетє можливість записатись на онлайн прийом у лікаря в форматі Zoom або Google meet</div>
+                            <div class="main-container__column1__content3__button-container">
+                                <button>Записатись</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-container__column2">
+                    <div class="box content">
+                        <div class="main-container__column2__content1__header">
+                            <div class="text32">
+                                Активні записи
+                                <img class="check-mark-icon" src="images/icons/checkMark.svg" alt="checkMark" />
+                            </div>
+                            <div class="main-container__column2__content1__header__button-container">
+                                <button class="text24">Записатись</button>
+                            </div>
+                        </div>
+                        <div class="active-record">
+                            <div class="active-record__details">
+                                <div class="active-record__info">
+                                    <div class="active-record__info__main">
+                                        <div class="active-record__name">Іван Іванович</div>
+                                        <img class="active-record__icon" src="images/icons/arrow6.svg" alt="arrow" />
+                                    </div>
+                                    <div class="active-record__position">Посада</div>
+                                </div>
+                                <div class="active-record__time-container">
+                                    <div class="active-record__progress">
+                                        <span class="active-record__time">15:00</span>
+                                    </div>
+                                    <span class="active-record__date">01.12.2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box content">
+                       <div class="text32 main-container__column2__content2">Лікарські призначення</div>
+                        <div class="main-container__column2__content2__block">
+                            <div class="text24">Іван Іванович</div>
+                            <div class="text16">Пройти курс лікування під моїм контролем</div>
+                            <div class="text24">01.11.2024</div>
+                        </div>
+                        <div class="main-container__column2__content2__block">
+                            <div class="text24">Іван Іванович</div>
+                            <div class="text16">Пройти курс лікування під моїм контролем</div>
+                            <div class="text24">01.11.2024</div>
+                        </div>
+                        <div class="main-container__column2__content2__block">
+                            <div class="text24">Іван Іванович</div>
+                            <div class="text16">Пройти курс лікування під моїм контролем</div>
+                            <div class="text24">01.11.2024</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //Main section -->
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
