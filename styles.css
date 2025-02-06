@@ -375,11 +375,14 @@ body {
 
 /* Science page */
 .main-container__content2 {
-    width: 100%;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .main-container__content2__content {
     display: flex;
-    margin-top: 6vh;
+    margin-top: 1vh;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -387,6 +390,9 @@ body {
 .main-container__content2__content__science-data {
     display: flex;
     align-items: center;
+}
+.main-container__content2__content__science-data span {
+    margin-right: 1vw;
 }
 /* //Science page */
 
