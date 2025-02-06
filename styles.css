@@ -243,13 +243,7 @@ body {
 
 .main-container__column1__content3__button-container button {
     width: 100%;
-    padding: 10px;
-    background: #73AF67;
-    color: #fff;
     font-size: 18px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
 }
 
 .main-container__column1__content3__button-container button:hover {
@@ -268,16 +262,6 @@ body {
 .main-container__column2__content1__header__button-container button {
     width: 15vw;
     height: 56px;
-    padding: 10px;
-    background: #73AF67;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.main-container__column2__content1__header__button-container button:hover {
-    background: #6b8d61;
 }
 
 .active-record {
@@ -356,10 +340,6 @@ body {
     cursor: pointer;
 }
 
-.main-container__column2__content2{
-
-}
-
 .main-container__column2__content2__block {
     display: flex;
     justify-content: space-between;
@@ -395,6 +375,41 @@ body {
     margin-right: 1vw;
 }
 /* //Science page */
+
+/* Prescriptions page */
+.main-container__content3__description {
+    margin-top: 2vh;
+}
+
+.main-container__content3__message-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+}
+
+.main-container__content3__message-container__form__text {
+    width: 85vw;
+    min-height: 30vh;
+    padding: 2vw;
+    border-radius: 10px;
+    cursor: text;
+    background: white;
+    outline: none;
+}
+
+.main-container__content3__message-container span{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: end;
+}
+
+.main-container__content3__message-container button {
+    margin-top: 2vh;
+    height: 5vh;
+    width: 20vw;
+}
+/* //Prescriptions page*/
 
 /* Global styles */
 .box {
@@ -433,8 +448,25 @@ body {
     font-family: 'Montserrat-Bold', sans-serif;
 }
 
+.text64 {
+    font-size: 3.5vw;
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
 .green {
     color: #73AF67;
+}
+
+.button {
+    background: #73AF67;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+.button:hover {
+    background: #6b8d61;
 }
 /* //Global styles */
 

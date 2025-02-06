@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
   scienceIcon.addEventListener("click", function () {
     mainContainer.innerHTML = `
       <div class="main-container__content2">
-        <div class="main-container__content2__header text32">
+        <div class="main-container__content2__header text64">
             Результати досліджень
         </div>
         <div class="box content text20 main-container__content2__content">
@@ -153,7 +153,30 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   prescriptionsIcon.addEventListener("click", function () {
-    mainContainer.innerHTML = '<div class="main-container__content3">3</div>';
+    mainContainer.innerHTML = `
+      <div class="main-container__content3">
+        <div class="main-container__content3__header text64">Повторне призначення ліків</div>
+        <div class="main-container__content3__description text24">
+            Ви маєте можливість надіслати запит на повторне призначення лікарських засобів через систему без необхідності додаткового прийому.
+        </div>
+        <div class="main-container__content3__message-container">
+            <form id="prescription-form" class="text24">
+                <div 
+                    id="prescription-text" 
+                    class="main-container__content3__message-container__form__text" 
+                    contenteditable="true"></div>
+            </form>
+           <span>
+                <button class="button" id="submit-button">Записатись</button>
+           </span>
+        </div>
+      </div>`;
+
+    document.getElementById("submit-button").addEventListener("click", function () {
+      const formText = document.getElementById("prescription-text");
+      console.log("Форма отправлена:", formText.innerHTML.trim());
+      formText.innerHTML = ""; // Очистка формы
+    });
   });
 
   chatIcon.addEventListener("click", function () {
