@@ -1,0 +1,39 @@
+.message {
+    width: 95%;
+}
+
+.message__container {
+    width: 100%;
+    margin-top: 2vh;
+}
+
+.message__container__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.message__container__header span{
+    display: flex;
+    align-items: center;
+}
+
+.message__container__header__name {
+    margin-left: 2vw;
+}
+
+.message__container__content {
+    margin-top: 2.5vh;
+}
+
+.message__container__button {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin-top: 2.5vh;
+}
+
+.message__container__button button {
+    width: 20vw;
+}
+
+

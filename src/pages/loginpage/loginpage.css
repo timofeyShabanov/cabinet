@@ -1,0 +1,66 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+}
+
+.login__container {
+    max-width: 400px;
+    width: 100%;
+    padding: 2rem;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.login__form-group {
+    width: 100%;
+}
+
+.login__form-group input,
+.login__form-group select {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #F9F9F9;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.login__form-group input[type="date"] {
+    padding: 11px;
+}
+
+.login__form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.login__form-row > * {
+    flex: 1;
+}
+
+.login__container__close-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 1rem;
+}
+
+.login__btn {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 14px;
+}
+
+.login__to-register-btn{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "cabinetvite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "lint:fix": "eslint src --ext .js --fix"
+  },
+  "devDependencies": {
+    "eslint": "^9.20.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "prettier": "^3.4.2",
+    "vite": "^6.1.0"
+  }
+}
