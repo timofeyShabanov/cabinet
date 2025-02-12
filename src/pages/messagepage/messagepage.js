@@ -1,8 +1,10 @@
-import { leftbar } from "../../components/leftbar.js";
-import { header } from "../../components/header.js";
+import { leftbar } from "../../components/leftbar/leftbar.js";
+import { header, renderHeader } from "../../components/header/header.js";
 import "./messagepage.css";
 
-export const messagepage = () => `
+export const messagepage = () => {
+  setTimeout(renderHeader, 0);
+  return `
 ${leftbar()}
     <div class="right-column-container"> 
 			${header()}
@@ -28,3 +30,4 @@ ${leftbar()}
 				</div>
 			</div>
 </div>`;
+};

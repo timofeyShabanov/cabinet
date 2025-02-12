@@ -1,8 +1,10 @@
-import { leftbar } from "../../components/leftbar.js";
-import { header } from "../../components/header.js";
+import { leftbar } from "../../components/leftbar/leftbar.js";
+import { header, renderHeader } from "../../components/header/header.js";
 import "./discount.css";
 
-export const discountpage = () => `
+export const discountpage = () => {
+  setTimeout(renderHeader, 0);
+  return `
 ${leftbar()}
     <div class="right-column-container"> 
 			${header()}
@@ -21,3 +23,4 @@ ${leftbar()}
         </div>
 			</div>
 </div>`;
+};

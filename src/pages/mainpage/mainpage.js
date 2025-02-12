@@ -1,7 +1,10 @@
-import { leftbar } from "../components/leftbar.js";
-import { header } from "../components/header.js";
+import { leftbar } from "../../components/leftbar/leftbar.js";
+import { header, renderHeader } from "../../components/header/header.js";
+import "./mainpage.css";
 
-export const mainPage = () => `
+export const mainPage = () => {
+  setTimeout(renderHeader, 0);
+  return `
 ${leftbar()}
     <div class="right-column-container"> 
 			${header()}
@@ -16,14 +19,14 @@ ${leftbar()}
                             <img class="icon" src="images/icons/arrow3.svg" alt="arrow3">
                         </div>
                     </div>
-                    <div class="box content">
+                    <div class="box content main-container__column1__content2">
                         <div class="main-container__column1__content2__header">
                             <div class="text32 bold">Дисконтна картка</div>
                             <img onclick="window.location.href='/discount'" class="main-container__column1__content2__header__arrow icon" src="images/icons/arrow5.svg" alt="arrow5">
                         </div>
                         <p class="text16 green">В нас наявна система знижок</p>
                     </div>
-                    <div class="box content">
+                    <div class="box content main-container__column1__content3">
                         <div class="main-container__column1__content3">
                             <div class="text32 bold">Онлайн консультація</div>
                             <div class="text16 main-container__column1__content3__description">Якщо ви хочите зекономити час то маетє можливість записатись на онлайн прийом у лікаря в форматі Zoom або Google meet</div>
@@ -63,7 +66,7 @@ ${leftbar()}
                             </div>
                         </div>
                     </div>
-                    <div class="box content">
+                    <div class="box content main-container__column2__content2">
                        <div class="text32 bold main-container__column2__content2">Лікарські призначення</div>
                         <div class="main-container__column2__content2__block">
                             <div class="text24 bold">Іван Іванович</div>
@@ -85,3 +88,4 @@ ${leftbar()}
             </div>
 		</div>
 `;
+};

@@ -1,0 +1,32 @@
+.main-container__content3__description {
+    margin-top: 2vh;
+}
+
+.main-container__content3__message-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+}
+
+.main-container__content3__message-container__form__text {
+    width: 85vw;
+    min-height: 30vh;
+    padding: 2vw;
+    border-radius: 10px;
+    cursor: text;
+    background: white;
+    outline: none;
+}
+
+.main-container__content3__message-container span{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: end;
+}
+
+.main-container__content3__message-container button {
+    margin-top: 2vh;
+    height: 5vh;
+    width: 20vw;
+}

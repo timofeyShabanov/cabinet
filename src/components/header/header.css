@@ -1,0 +1,103 @@
+.header {
+    display: flex;
+    height: 65px;
+    width: 100%;
+    gap: 10px;
+}
+
+.search-container {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #FFFFFF;
+    padding: 8px 47px 8px 47px;
+    background-color: #FFFFFF;
+    font-size: 24px;
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    flex-grow: 1;
+    margin-right: 8px;
+}
+
+.search-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.bell-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.profile-card {
+    justify-content: space-between;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 16px 24px;
+    gap: 16px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.check-mark-icon {
+    width: 29px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.dropdown-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.user-info {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
+    border-radius: 50%;
+    color: #555;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.avatar:hover {
+    background-color: #bbb;
+}
+
+.header-mobile {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+.header-mobile__container {
+    display: flex;
+    align-items: center;
+}
+
+.header-mobile__container__notification {
+ margin-right: 20px;
+}

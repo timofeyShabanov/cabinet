@@ -1,8 +1,8 @@
-import { mainPage } from "./pages/mainpage.js";
-import { registerpage } from "./pages/registerpage/registerpage.js";
-import { sciencepage } from "./pages/sciencepage.js";
 import "./style.css";
-import { prescriptionspage } from "./pages/prescriptionspage.js";
+import { mainPage } from "./pages/mainpage/mainpage.js";
+import { registerpage } from "./pages/registerpage/registerpage.js";
+import { sciencepage } from "./pages/sciencepage/sciencepage.js";
+import { prescriptionspage } from "./pages/prescriptionspage/prescriptionspage.js";
 import { discountpage } from "./pages/discountpage/discountpage.js";
 import { loginpage } from "./pages/loginpage/loginpage.js";
 import { chatpage } from "./pages/chatpage/chatpage.js";

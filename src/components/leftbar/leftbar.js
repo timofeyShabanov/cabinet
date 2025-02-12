@@ -1,3 +1,5 @@
+import "./leftbar.css";
+
 export const leftbar = () => `
   <div class="box left-column">
     <div class="logo">

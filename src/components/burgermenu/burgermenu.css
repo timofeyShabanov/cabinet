@@ -1,0 +1,88 @@
+.off-screen-menu {
+    background-color: rgb(255, 250, 243, 0.5);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0s 0.3s;
+}
+
+.off-screen-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s;
+}
+
+.off-screen-menu__container {
+    width: 70%;
+    background-color: #FFFFFF;
+    max-width: 400px;
+    position: absolute;
+    right: 0;
+    transform: translateX(100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 20px;
+    box-shadow: -2px 0 12px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+.off-screen-menu.active .off-screen-menu__container {
+    transform: translateX(0);
+}
+
+.off-screen-menu__container__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.off-screen-menu__container__science {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px
+}
+
+.off-screen-menu__container__prescriptions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px
+}
+
+.off-screen-menu__container__chat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px
+}
+
+.off-screen-menu__container__logout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px
+}
+
+.off-screen-menu__container__photo {
+    margin-top: 30px
+}
+
+.off-screen-menu__container__password {
+    margin-top: 30px
+}
+
+.off-screen-menu__container__button {
+    width: 100%;
+    margin-top: 30px;
+    height: 50px;
+}
+.off-screen-menu__container__button button{
+    width: 100%;
+    height: 100%;
+}

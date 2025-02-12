@@ -1,0 +1,34 @@
+.left-column {
+    display: flex;
+    flex-direction: column;
+    width: 6.5vw;
+    height: 95vh;
+}
+
+.logo {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 52px;
+}
+
+.left-column__icon {
+    cursor: pointer;
+    margin: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.left-column__icon.logout-icon {
+    margin-top: auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+    .left-column {
+        display: none;
+    }
+}
