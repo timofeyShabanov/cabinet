@@ -32,7 +32,7 @@ ${leftbar()}
                     contenteditable="true"></div>
             </form>
            <span>
-                <button class="button bold" id="submit-button">Записатись</button>
+                <button class="button bold" id="submit-button">Надіслати</button>
            </span>
         </div>
       </div>

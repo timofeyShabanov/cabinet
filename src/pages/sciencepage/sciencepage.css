@@ -21,17 +21,15 @@
 }
 
 @media (max-width: 500px) {
-    .main-container {
-        width: 100%;
-    }
-
     .main-container__content2__content {
         padding: 55px 25px 55px 25px;
+        width: auto;
     }
 
     .main-container__content2 {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: auto;
     }
 }

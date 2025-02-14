@@ -23,28 +23,27 @@ ${leftbar()}
 							<div class="chat-message__address__choice">
 								<div class="chat-message__address__choice__select">
 									<select class="text20 bold">
-													<option value="likar1">Лікар</option>
-													<option value="likar2">Лікар 2</option>
-													<option value="likar3">Лікар 3</option>
+										<option value="likar1">Лікар</option>
+										<option value="likar2">Лікар 2</option>
+										<option value="likar3">Лікар 3</option>
 									</select>
                 </div>
 								<span>Адміністатор</span>
 							</div>
 						</div>
 						<div class="chat-message__address__message">
-            <form id="prescription-form" class="text24">
-                <div 
-                    id="prescription-text" 
-                    class="bold chat-message__address__message__form__text" 
-                    contenteditable="true"></div>
-            </form>
-						<span>
-								<button class="button bold" id="submit-button">Записатись</button>
-						</span>
+							<form id="prescription-form" class="text24">
+									<div 
+											id="prescription-text" 
+											class="bold chat-message__address__message__form__text" 
+											contenteditable="true"></div>
+							</form>
+							<span>
+									<button class="button bold" id="submit-button">Надіслати</button>
+							</span>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 </div>`;
 };
