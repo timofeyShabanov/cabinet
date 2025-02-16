@@ -73,6 +73,10 @@
         margin-top: 2vh;
     }
 
+    .chat-header {
+        font-size: 36px
+    }
+
     .chat-message__address {
         display: flex;
         flex-direction: column;

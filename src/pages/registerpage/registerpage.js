@@ -24,14 +24,18 @@ export const registerpage = () => `
             <div class="register__form-row">
                 <div class="register__form-group register__gender-select">
                     <select>
-                        <option value="">Стать ▼</option>
+                        <option value="">Стать</option>
                         <option value="male">Чоловіча</option>
                         <option value="female">Жіноча</option>
                     </select>
                 </div>
                 
                 <div class="register__form-group">
-                    <input type="date" placeholder="Дата народження" />
+                    <input 
+                    	placeholder="Дата народження" 
+                    	type="text" 
+  										onfocus="this.type='date'" 
+  										onblur="if(this.value==''){this.type='text'}"/>
                 </div>
             </div>
             
