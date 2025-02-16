@@ -109,18 +109,21 @@
     background: #F9F9F9;
     border-radius: 10px;
     margin-top: 6vh;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .active-record__details {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 100%;
 }
 
 .active-record__info {
     display: flex;
     flex-direction: column;
-    width: 45vw;
+    width: 100%;
 }
 
 .active-record__info__main {
@@ -222,6 +225,24 @@
 
     .main-container__column2__content1__header__button-container {
         display: none;
+    }
+
+    .main-container__column2__content2__block {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .main-container__column2__content2__block__text {
+        margin-top: 18px;
+    }
+
+    .main-container__column2__content2__block__date {
+        margin-top: 18px;
+        display: flex;
+        justify-content: end;
     }
 }
 

@@ -1,23 +1,24 @@
 .message {
-    width: 95%;
+    width: 100%;
 }
 
 .message__container {
     width: 100%;
     margin-top: 2vh;
+    box-sizing: border-box;
 }
 
 .message__container__header {
     display: flex;
     justify-content: space-between;
-}
-
-.message__container__header span{
-    display: flex;
     align-items: center;
 }
 
-.message__container__header__name {
+.message__container__header span{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-left: 2vw;
 }
 
@@ -36,4 +37,27 @@
     width: 20vw;
 }
 
+@media (max-width: 500px) {
+    .message__container__button button {
+        width: 100%;
+    }
+
+    .message__container__header {
+        display: flex;
+    }
+
+    .message__container__header span{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-left: 10vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .message__header {
+        font-size: 38px
+    }
+}
 

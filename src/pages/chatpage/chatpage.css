@@ -53,13 +53,14 @@
     cursor: text;
     background: #F9F9F9;
     outline: none;
+    box-sizing: border-box;
 }
 
 .chat-message__address__message span{
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: end;
+    align-items: end
 }
 
 .chat-message__address__message button {
@@ -103,9 +104,10 @@
     }
 
     .chat-message__address__choice span {
-        width: 93.1%;
         margin-right: 0;
         margin-top: 1vh;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .chat-message__address__message {
@@ -113,13 +115,13 @@
     }
 
     .chat-message__address__message__form__text {
-        width: 96.1%;
         min-height: 30vh;
         padding: 2vw;
         border-radius: 10px;
         cursor: text;
         background: #F9F9F9;
         outline: none;
+        width: 100%;
     }
 
     .chat-message__address__message span{

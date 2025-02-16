@@ -11,6 +11,7 @@
     max-width: 400px;
     width: 100%;
     padding: 4.07vw 4.08vw 4.07vw 4.08vw;
+    box-sizing: border-box;
 }
 
 .review__container__header {
@@ -46,5 +47,15 @@
 
 .review__container__button button {
     width: 100%;
+}
+
+@media (max-width: 500px) {
+    .review__container {
+        padding: 30px 25px;
+    }
+
+    .review__container__button button {
+        font-size: 20px;
+    }
 }
 

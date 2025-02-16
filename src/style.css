@@ -52,6 +52,11 @@ body {
   cursor: pointer;
 }
 
+.avatar {
+  width: 73px;
+  height: 73px;
+}
+
 .text16 {
   font-size: 16px;
 }

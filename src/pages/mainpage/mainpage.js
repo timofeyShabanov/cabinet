@@ -69,19 +69,19 @@ ${leftbar()}
                     <div class="box content main-container__column2__content2">
                        <div class="text32 bold main-container__column2__content2">Лікарські призначення</div>
                         <div class="main-container__column2__content2__block">
-                            <div class="text24 bold">Іван Іванович</div>
-                            <div class="text16">Пройти курс лікування під моїм контролем</div>
-                            <div class="text24 bold">01.11.2024</div>
+                            <div class="text24 bold main-container__column2__content2__block__name">Іван Іванович</div>
+                            <div class="text16 main-container__column2__content2__block__text">Пройти курс лікування під моїм контролем</div>
+                            <div class="text24 bold main-container__column2__content2__block__date">01.11.2024</div>
                         </div>
                         <div class="main-container__column2__content2__block">
-                            <div class="text24 bold">Іван Іванович</div>
-                            <div class="text16">Пройти курс лікування під моїм контролем</div>
-                            <div class="text24 bold">01.11.2024</div>
+                            <div class="text24 bold main-container__column2__content2__block__name">Іван Іванович</div>
+                            <div class="text16 main-container__column2__content2__block__text">Пройти курс лікування під моїм контролем</div>
+                            <div class="text24 bold main-container__column2__content2__block__date">01.11.2024</div>
                         </div>
                         <div class="main-container__column2__content2__block">
-                            <div class="text24 bold">Іван Іванович</div>
-                            <div class="text16">Пройти курс лікування під моїм контролем</div>
-                            <div class="text24 bold">01.11.2024</div>
+                            <div class="text24 bold main-container__column2__content2__block__name">Іван Іванович</div>
+                            <div class="text16 main-container__column2__content2__block__text">Пройти курс лікування під моїм контролем</div>
+                            <div class="text24 bold main-container__column2__content2__block__date">01.11.2024</div>
                         </div>
                     </div>
                 </div>
