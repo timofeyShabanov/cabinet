@@ -1,22 +1,11 @@
-@font-face {
-  font-family: 'Montserrat';
-  src: url('fonts/Montserrat-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Montserrat-Bold';
-  src: url('fonts/Montserrat-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
   background: #FFFAF3;
-  background-image: url('images/background.svg');
+  background-image: url('/images/background.svg');
   background-size: contain;
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -28,7 +17,8 @@ body {
   gap: 20px;
   margin: 0 auto;
   padding: 20px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   max-width: 1980px;
 }
 
@@ -95,7 +85,8 @@ body {
 }
 
 .bold {
-  font-family: 'Montserrat-Bold', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
 .button {
