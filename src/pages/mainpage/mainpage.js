@@ -27,13 +27,11 @@ ${leftbar()}
                         <p class="text16 green">В нас наявна система знижок</p>
                     </div>
                     <div class="box content main-container__column1__content3">
-                        <div class="main-container__column1__content3">
-                            <div class="text32 bold">Онлайн консультація</div>
-                            <div class="text16 main-container__column1__content3__description">Якщо ви хочите зекономити час то маетє можливість записатись на онлайн прийом у лікаря в форматі Zoom або Google meet</div>
-                            <div class="main-container__column1__content3__button-container">
-                                <button class="button">Записатись</button>
-                            </div>
-                        </div>
+                    	<div class="text32 bold">Онлайн консультація</div>
+                      <div class="text16 main-container__column1__content3__description">Якщо ви хочите зекономити час то маетє можливість записатись на онлайн прийом у лікаря в форматі Zoom або Google meet</div>
+                      <div class="main-container__column1__content3__button-container">
+                      	<button class="button">Записатись</button>
+                      </div>
                     </div>
                 </div>
 
@@ -48,7 +46,7 @@ ${leftbar()}
                                 <button class="button text24 bold">Записатись</button>
                             </div>
                         </div>
-                        <div class="active-record">
+                        <div class="active-record content">
                             <div class="active-record__details">
                                 <div class="active-record__info">
                                     <div class="active-record__info__main">
@@ -68,17 +66,17 @@ ${leftbar()}
                     </div>
                     <div class="box content main-container__column2__content2">
                        <div class="text32 bold main-container__column2__content2">Лікарські призначення</div>
-                        <div class="main-container__column2__content2__block">
+                        <div class="main-container__column2__content2__block content">
                             <div class="text24 bold main-container__column2__content2__block__name">Іван Іванович</div>
                             <div class="text16 main-container__column2__content2__block__text">Пройти курс лікування під моїм контролем</div>
                             <div class="text24 bold main-container__column2__content2__block__date">01.11.2024</div>
                         </div>
-                        <div class="main-container__column2__content2__block">
+                        <div class="main-container__column2__content2__block content">
                             <div class="text24 bold main-container__column2__content2__block__name">Іван Іванович</div>
                             <div class="text16 main-container__column2__content2__block__text">Пройти курс лікування під моїм контролем</div>
                             <div class="text24 bold main-container__column2__content2__block__date">01.11.2024</div>
                         </div>
-                        <div class="main-container__column2__content2__block">
+                        <div class="main-container__column2__content2__block content">
                             <div class="text24 bold main-container__column2__content2__block__name">Іван Іванович</div>
                             <div class="text16 main-container__column2__content2__block__text">Пройти курс лікування під моїм контролем</div>
                             <div class="text24 bold main-container__column2__content2__block__date">01.11.2024</div>

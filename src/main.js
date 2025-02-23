@@ -23,6 +23,30 @@ const routes = {
   "/review": reviewpage,
 };
 
+if (window.matchMedia("(max-width: 768px)").matches) {
+  const backgrounds = {
+    "/": "url('images/background2.svg')",
+    "/register": "url('images/background2.svg')",
+    "/login": "url('images/background2.svg')",
+    "/science": "url('images/background2.svg')",
+    "/prescriptions": "url('images/background2.svg')",
+    "/discount": "url('images/background2.svg')",
+    "/chat": "url('images/background2.svg')",
+    "/message": "url('images/background2.svg')",
+    "/rerecognition": "url('images/background2.svg')",
+    "/review": "url('images/background2.svg')",
+  };
+
+  document.body.style.setProperty(
+    "--bg-image",
+    backgrounds[window.location.pathname] || "url('images/background2.svg')",
+  );
+  document.body.setAttribute(
+    "style",
+    `--bg-image: ${backgrounds[window.location.pathname] || "url('images/background2.svg')"};`,
+  );
+}
+
 function navigate(path) {
   history.pushState({}, "", path);
   render();

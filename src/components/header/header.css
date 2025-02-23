@@ -1,6 +1,8 @@
 .header {
     display: flex;
-    height: 65px;
+    height: 8vh;
+    max-height: 120px;
+    min-height: 50px;
     width: 100%;
     gap: 10px;
 }
@@ -38,6 +40,7 @@
 }
 
 .profile-card {
+    position: relative;
     justify-content: space-between;
     width: 33%;
     display: flex;
@@ -47,6 +50,10 @@
     gap: 16px;
     font-weight: 600;
     font-size: 24px;
+    cursor: pointer;
+}
+.profile-card.invisible {
+    border-radius: 10px 10px 0 0;
 }
 
 .check-mark-icon {
@@ -54,18 +61,14 @@
     height: 12px;
     cursor: pointer;
 }
+.check-mark-icon.invisible {
+    display: none;
+}
 
 .dropdown-link {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #000;
-}
-
-.user-info {
-    font-size: 16px;
-    font-weight: 500;
-    color: #000;
 }
 
 .avatar {
@@ -82,10 +85,6 @@
     text-decoration: none;
 }
 
-.avatar:hover {
-    background-color: #bbb;
-}
-
 .header-mobile {
     display: flex;
     justify-content: space-between;
@@ -100,4 +99,40 @@
 
 .header-mobile__container__notification {
  margin-right: 20px;
+}
+/* Окно */
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    z-index: 10000;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+.profile-dropdown.visible {
+    display: block;
+}
+
+.profile-dropdown div {
+    padding: 0 24px 16px 24px;
+}
+
+.profile-card__change-photo {
+    margin-top: 40px
+}
+
+.profile-card__change-password {
+    margin-top: 10px
+}
+
+.profile-card__logout {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+}
+.profile-card__logout img {
+    margin-right: 20px;
 }

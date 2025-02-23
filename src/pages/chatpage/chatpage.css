@@ -1,6 +1,8 @@
 .chat{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .chat-description {
@@ -26,16 +28,18 @@
     background: #F9F9F9;
     border-radius: 8px;
     padding: 12px;
-    width: 10vw;
+    width: auto;
+    box-sizing: border-box;
 }
 
 .chat-message__address__choice__select select {
-    width: 10vw;
     padding: 12px;
     border: none;
     background: #F9F9F9;
     border-radius: 8px;
     margin-right: 6vw;
+    width: auto;
+    box-sizing: border-box;
 }
 
 
@@ -46,14 +50,14 @@
 }
 
 .chat-message__address__message__form__text {
-    width: 80vw;
+    width: 100%;
+    box-sizing: border-box;
     min-height: 30vh;
     padding: 2vw;
     border-radius: 10px;
     cursor: text;
     background: #F9F9F9;
     outline: none;
-    box-sizing: border-box;
 }
 
 .chat-message__address__message span{
@@ -69,7 +73,7 @@
     width: 20vw;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     .chat-message {
         margin-top: 2vh;
     }

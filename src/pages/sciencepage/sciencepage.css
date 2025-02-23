@@ -1,14 +1,15 @@
 .main-container__content2 {
-    width: 83vw;
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .main-container__content2__content {
     display: flex;
     margin-top: 1vh;
     width: 100%;
+    box-sizing: border-box;
     justify-content: space-between;
     align-items: center;
 }

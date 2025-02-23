@@ -7,14 +7,14 @@
 }
 
 .main-container__column1 {
-    width: 40%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .main-container__column2 {
-    width: 60%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -23,12 +23,12 @@
 .main-container__column1__content1 {
     position: relative;
     background: #fff;
-    padding: 20px 20px 20px 20px;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 .main-container__column1__content1__text {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .main-container__column1__content1__arrow {
@@ -49,6 +49,11 @@
     height: 24px;
 }
 
+.main-container__column1__content2 {
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
 .main-container__column1__content2__header {
     display: flex;
     align-items: center;
@@ -64,7 +69,11 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    min-height: 6.5vw;
+    justify-content: space-between;
+    height: 25vh;
+    margin-top: 20px;
+    min-height: 300px;
+    max-height: 900px;
 }
 
 .main-container__column1__content3__description {
@@ -97,7 +106,7 @@
 }
 
 .main-container__column2__content1__header__button-container button {
-    width: 15vw;
+    width: auto;
     height: 56px;
 }
 
@@ -105,7 +114,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px;
     background: #F9F9F9;
     border-radius: 10px;
     margin-top: 6vh;
@@ -180,19 +188,24 @@
     cursor: pointer;
 }
 
+.main-container__column2__content2 {
+    margin-top: 10px;
+}
+
 .main-container__column2__content2__block {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: #F9F9F9;
-    width: 45vw;
-    padding: 1vw;
+    width: 100%;
+    box-sizing: border-box;
     margin-top: 2vw;
     border-radius: 10px;
 }
 /* //Right block */
 
 
-@media (max-width: 500px) {
+@media (max-width: 640px) {
     .main-container {
         flex-direction: column;
     }
@@ -217,14 +230,17 @@
 
     .main-container__column1__content3 {
         margin-top: 20px;
-    }
-
-    .main-container__column2__content2 {
-        margin-top: 20px;
+        height: 100px;
+        min-height: 200px;
     }
 
     .main-container__column2__content1__header__button-container {
         display: none;
+    }
+}
+@media (max-width: 900px) {
+    .main-container__column2__content2 {
+        margin-top: 20px;
     }
 
     .main-container__column2__content2__block {

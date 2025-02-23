@@ -9,7 +9,8 @@
 }
 
 .main-container__content3__message-container__form__text {
-    width: 85vw;
+    width: 100%;
+    box-sizing: border-box;
     min-height: 30vh;
     padding: 2vw;
     border-radius: 10px;
