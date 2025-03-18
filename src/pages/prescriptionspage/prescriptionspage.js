@@ -15,7 +15,7 @@ document.addEventListener("click", (event) => {
 export const prescriptionspage = () => {
   setTimeout(renderHeader, 0);
   return `
-${leftbar()}
+${leftbar("prescriptions")}
     <div class="right-column-container"> 
 			${header()}
 			<div class="main-container">

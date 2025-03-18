@@ -5,7 +5,7 @@ import "./messagepage.css";
 export const messagepage = () => {
   setTimeout(renderHeader, 0);
   return `
-${leftbar()}
+${leftbar("chat")}
     <div class="right-column-container"> 
 			${header()}
 			<div class="main-container">

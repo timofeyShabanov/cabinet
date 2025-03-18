@@ -6,7 +6,7 @@ import "../../style.css";
 export const rerecognitionpage = () => {
   setTimeout(renderHeader, 0);
   return `
-${leftbar()}
+${leftbar("prescriptions")}
     <div class="right-column-container"> 
 			${header()}
 			<div class="main-container">

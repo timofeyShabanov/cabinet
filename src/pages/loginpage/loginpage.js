@@ -13,7 +13,7 @@ export const loginpage = () => `
                 <input type="text" placeholder="Логін" required />
             </div>
             
-            <div class="login__form-group">
+            <div class="login__form-password">
                 <input type="text" placeholder="Пароль" required />
             </div>
 
