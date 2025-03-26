@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     border: 1px solid #FFFFFF;
-    padding: 8px 47px 8px 47px;
+    padding: 8px 26px 8px 47px;
     background-color: #FFFFFF;
     font-size: 24px;
     font-family: 'Montserrat-Bold', sans-serif;
@@ -62,10 +62,13 @@
     height: 12px;
     cursor: pointer;
 }
-.check-mark-icon.invisible {
-    display: none;
+.check-mark-icon {
+    transition: transform 0.3s ease-in-out;
 }
 
+.check-mark-icon.invisible {
+    transform: rotate(180deg);
+}
 .dropdown-link {
     display: flex;
     align-items: center;
@@ -151,7 +154,8 @@
     left: 0;
     background: white;
     z-index: 10000;
-    width: 800%;
+    width: 28vw;
+    max-width: 550px;
     border-radius: 10px;
     padding: 30px;
     height: 450px;
@@ -191,31 +195,30 @@
     margin-right: 10px;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1980px) {
     .notifications-dropdown {
-        width: 650%;
+        width: 26vw;
     }
 }
 
-@media (max-width: 1450px) {
-    .notifications-dropdown {
-        width: 600%;
-    }
-}
-
-@media (max-width: 1300px) {
-    .notifications-dropdown {
-        width: 500%;
-    }
-}
-
-@media (max-width: 1100px) {
-    .notifications-dropdown {
-        width: 450%;
-    }
-}
 @media (max-width: 950px) {
     .notifications-dropdown {
         width: 400%;
+    }
+}
+
+@media (max-width: 500px) {
+    #header-container {
+        position: fixed;
+        z-index: 10000;
+        display: flex;
+        justify-content: space-between;
+        background: #FFFAF3;
+        width: 90%;
+        top: 0;
+        height: 100px;
+    }
+    #header-container > * {
+        flex: 1  20%;
     }
 }

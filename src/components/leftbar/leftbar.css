@@ -87,7 +87,7 @@
     background: white;
     z-index: 10000;
     border-radius: 0 10px 10px 0;
-    min-width: 200px;
+    min-width: 300px;
 }
 
 .leftbar-dropdown.visible {
@@ -104,16 +104,30 @@
     white-space: nowrap;
     margin: 20px 0 20px 0;
     padding-top: 8px;
-    padding-bottom: 42px;
+    padding-bottom: 52px;
 }
 
 .leftbar-item {
-    padding: 19px 10px;
+    padding: 10px 10px;
     cursor: pointer;
-    color: #333;
     transition: background 0.3s;
     white-space: nowrap;
-    margin: 20px 0 20px 0;
+}
+
+.leftbar-item:nth-child(2) {
+    margin-top: 26px;
+}
+.leftbar-item:nth-child(3) {
+    margin-top: 34px;
+}
+.leftbar-item:nth-child(4) {
+    margin-top: 34px;
+}
+.leftbar-item:nth-child(5) {
+    margin-top: 38px;
+}
+.leftbar-item:nth-child(6) {
+    margin-top: 34px;
 }
 
 .leftbar-item:hover {

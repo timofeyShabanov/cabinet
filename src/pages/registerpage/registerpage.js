@@ -4,9 +4,12 @@ import "../../style.css";
 export const registerpage = () => `
 <div class="register">
     <div class="register__container box">
-        <span class="register__container__close-btn">
-            <img class="icon" onclick="console.log('нажали на крестик')" src='images/icons/cross.svg' alt="close"/>
-        </span>
+    		<div class="register__container__header text32 bold">
+					Реєстрація
+					<span class="register__container__close-btn">
+							<img class="icon" onclick="console.log('нажали на крестик')" src='images/icons/cross.svg' alt="close"/>
+					</span>
+        </div>
         
         <form class="register__form">
             <div class="register__form-group">

@@ -9,6 +9,7 @@ const initActiveRecords = () => {
     header.addEventListener("click", (e) => {
       e.stopPropagation();
       dropdown.classList.toggle("visible");
+      header.classList.toggle("active");
 
       document
         .querySelectorAll(".notifications-dropdown, .profile-dropdown")
@@ -18,12 +19,12 @@ const initActiveRecords = () => {
     document.addEventListener("click", (e) => {
       if (!header.contains(e.target) && !dropdown.contains(e.target)) {
         dropdown.classList.remove("visible");
+        header.classList.remove("active");
       }
     });
   }
 };
 
-// Обновите mainPage для инициализации
 export const mainPage = () => {
   setTimeout(initLeftbar, 0);
   setTimeout(renderHeader, 0);
@@ -34,7 +35,7 @@ ${leftbar()}
 			${header()}
 			<div class="main-container">
                 <div class="main-container__column1">
-                    <div class="box content main-container__column1__content1">
+                    <div class="box content main-container__column1__content1" onclick="window.location.href='/'">
                         <div class="main-container__column1__content1__text text32 bold">Назва статті</div>
                         <div class="main-container__column1__content1__text text16">Часто клієнтами косметологів стають люди, що страждають проблемами чи захворюваннями зі шкірою, з якими боротися самостійно неможливо</div>
                         <div class="text20 bold">Іван Іванович</div>
@@ -43,7 +44,7 @@ ${leftbar()}
                             <img class="icon" src="images/icons/arrow3.svg" alt="arrow3">
                         </div>
                     </div>
-                    <div class="box content main-container__column1__content2">
+                    <div class="box content main-container__column1__content2" onclick="window.location.href='/discount'">
                         <div class="main-container__column1__content2__header">
                             <div class="text32 bold">Дисконтна картка</div>
                             <img onclick="window.location.href='/discount'" class="main-container__column1__content2__header__arrow icon" src="images/icons/arrow5.svg" alt="arrow5">

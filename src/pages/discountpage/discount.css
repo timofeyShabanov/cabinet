@@ -1,16 +1,26 @@
 .discount-card__description1 {
-    margin-top: 5vh;
+    margin-top: 20px;
 }
 
 .discount-card__description2 {
-    margin-top: 5vh;
+    margin-top: 20px;
 }
 
 .discount-card__advantages {
-    margin-top: 5vh;
+    margin-top: 20px;
+
 }
 
 .discount-card__advantages__list li{
-    margin-top: 3vh;
+    margin-top: 12px;
 }
+
+@media (max-width: 800px) {
+    .discount-card__advantages__list {
+        background: #FFFFFF;
+        padding: 30px 40px;
+        border-radius: 10px;
+    }
+}
+
 

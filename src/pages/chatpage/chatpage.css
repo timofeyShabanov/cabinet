@@ -37,11 +37,19 @@
     border: none;
     background: #F9F9F9;
     border-radius: 8px;
-    margin-right: 6vw;
-    width: auto;
+    margin-right: 8vw;
+    width: 60%;
     box-sizing: border-box;
-}
+    padding-right: 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path fill="%23000000" d="M7 10l5 5 5-5H7z"/></svg>') no-repeat right 8px center;
+    background-size: 20px;
+    background-color: #F9F9F9;
+    outline: none;
 
+}
 
 .chat-message__address__message {
     display: flex;
@@ -104,7 +112,14 @@
 
     .chat-message__address__choice__select select {
         width: 100%;
-        margin-right: 0;
+        padding-right: 20px;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path fill="%23000000" d="M7 10l5 5 5-5H7z"/></svg>') no-repeat right 15px center;
+        background-size: 20px;
+        background-color: #F9F9F9;
+        outline: none;
     }
 
     .chat-message__address__choice span {

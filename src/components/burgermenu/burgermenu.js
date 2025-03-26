@@ -19,15 +19,23 @@ export const burgermenu = () => `
             	Результати досліджень
             	<img src="images/icons/science.svg" class="icon" alt="science"/>
             </div>
-            <div onclick="window.location.href='/prescriptions'" class="off-screen-menu__container__prescriptions">
+            <div onclick="window.location.href='/rerecognition'" class="off-screen-menu__container__prescriptions">
             	Призначення ліків
             	<img src="images/icons/prescriptions.svg" class="icon" alt="prescription"/>
             </div>
-            <div onclick="window.location.href='/chat'" class="off-screen-menu__container__chat">
+            <div onclick="window.location.href='/prescriptions'" class="off-screen-menu__container__chat">
             	Чат
+            	<img src="images/icons/chat2.svg" class="icon" alt="chat"/>
+            </div>
+            <div onclick="window.location.href='/message'" class="off-screen-menu__container__chat">
+            	Ваша скринька
+            	<img src="images/icons/mail.svg" class="icon" alt="chat"/>
+            </div>
+            <div onclick="window.location.href='/chat'" class="off-screen-menu__container__chat">
+            	Надіслати
             	<img src="images/icons/chat.svg" class="icon" alt="chat"/>
             </div>
-             <div onclick="window.location.href='/'" class="off-screen-menu__container__chat">
+            <div onclick="window.location.href='/'" class="off-screen-menu__container__chat">
             	Головна сторінка
             	<img src="images/logo.png" class="icon" alt='logo'/>
             </div>

@@ -207,6 +207,7 @@
 @media (max-width: 640px) {
     .main-container {
         flex-direction: column;
+        margin-top: 80px;
     }
 
     .main-container__column1 {
@@ -231,6 +232,10 @@
         height: 100px;
         min-height: 200px;
     }
+    .main-container__column1__content1__arrow {
+        bottom: 38px;
+    }
+
 
     .main-container__column2__content1__header__button-container {
         display: none;
@@ -329,5 +334,9 @@
 
 .dropdown-item:last-child {
     border-bottom: none;
+}
+
+.active-record__header.active img {
+    transform: rotate(180deg);
 }
 

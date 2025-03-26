@@ -32,11 +32,11 @@ export const leftbar = (backlight) => {
      <div class="leftbar-dropdown">
     	 <div class="leftbar-dropdown__container"> 
           <div class="leftbar-item__logo text20 bold" onclick="window.location.href='/'">Team Spirit Medical</div>
-          <div class="leftbar-item  text20 bold" onclick="window.location.href='/science'">Результати досліджень</div>
-          <div class="leftbar-item text20 bold" onclick="window.location.href='/rerecognition'">Призначення ліків</div>
-          <div class="leftbar-item text20 bold" onclick="window.location.href='/prescriptions'">Чат</div>
-          <div class="leftbar-item text20 bold" onclick="window.location.href='/message'">Повідомлення</div>
-          <div class="leftbar-item text20 bold" onclick="window.location.href='/chat'">Надіслати</div>
+          <div class="leftbar-item  text20 bold ${backlight === "science" ? "green" : ""}" onclick="window.location.href='/science'">Результати досліджень</div>
+          <div class="leftbar-item text20 bold ${backlight === "rerecognition" ? "green" : ""}" onclick="window.location.href='/rerecognition'">Призначення ліків</div>
+          <div class="leftbar-item text20 bold ${backlight === "prescriptions" ? "green" : ""}" onclick="window.location.href='/prescriptions'">Чат</div>
+          <div class="leftbar-item text20 bold ${backlight === "message" ? "green" : ""}" onclick="window.location.href='/message'">Ваша скринька</div>
+          <div class="leftbar-item text20 bold ${backlight === "chat" ? "green" : ""}" onclick="window.location.href='/chat'">Надіслати</div>
      	 </div>
      </div>
   </div> 

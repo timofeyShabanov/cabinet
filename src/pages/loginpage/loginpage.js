@@ -4,10 +4,13 @@ import "../../style.css";
 export const loginpage = () => `
 <div class="login">
     <div class="login__container box">
-        <span class="login__container__close-btn">
+    		<div class="login__container__header text32 bold">
+					Увійти в запис
+					<span class="login__container__close-btn">
             <img class="icon" onclick="console.log('нажали на крестик')" src='images/icons/cross.svg' alt="close"/>
-        </span>
-        
+        	</span>
+        </div>
+
         <form class="login__form">
             <div class="login__form-login">
                 <input class="text24 bold" type="text" placeholder="Логін" required />
