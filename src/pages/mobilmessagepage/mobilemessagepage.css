@@ -1,0 +1,52 @@
+.mobilemessage {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobilemessage__header {
+    font-size: 48px;
+}
+
+.mobilemessage__container {
+    padding: 28px 32px;
+    margin-top: 20px;
+}
+
+.mobilemessage__container__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.mobilemessage__container__header__date {
+    font-size: 14px;
+}
+
+.mobilemessage__container__content {
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+@media (max-width: 420px) {
+    .mobilemessage__header {
+        font-size: 36px;
+    }
+    .mobilemessage__container__header {
+        font-size: 14px;
+    }
+}
+@media (max-width: 340px) {
+    .mobilemessage__header {
+        font-size: 28px;
+    }
+    .mobilemessage__container__header {
+        font-size: 12px;
+    }
+    .mobilemessage__container__header__date {
+        font-size: 10px;
+    }
+    .mobilemessage__container__header__date {
+        font-size: 8px;
+    }
+}

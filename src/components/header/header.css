@@ -36,6 +36,7 @@
 .bell-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 10px;
 }
 
@@ -135,4 +136,86 @@
 }
 .profile-card__logout img {
     margin-right: 20px;
+}
+
+/* окно уведомлений  */
+.bell-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.notifications-dropdown {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 10000;
+    width: 800%;
+    border-radius: 10px;
+    padding: 30px;
+    height: 450px;
+    color: black;
+}
+
+.notifications-dropdown.visible {
+    display: block;
+}
+
+.notifications-dropdown__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.notifications-dropdown__header span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notifications-dropdown__header span img{
+   width: 25px;
+}
+
+.notifications-dropdown__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.header-mobile__logout .icon:first-child {
+    margin-right: 10px;
+}
+
+@media (max-width: 1600px) {
+    .notifications-dropdown {
+        width: 650%;
+    }
+}
+
+@media (max-width: 1450px) {
+    .notifications-dropdown {
+        width: 600%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .notifications-dropdown {
+        width: 500%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .notifications-dropdown {
+        width: 450%;
+    }
+}
+@media (max-width: 950px) {
+    .notifications-dropdown {
+        width: 400%;
+    }
 }

@@ -1,4 +1,4 @@
-import { leftbar } from "../../components/leftbar/leftbar.js";
+import { initLeftbar, leftbar } from "../../components/leftbar/leftbar.js";
 import { header, renderHeader } from "../../components/header/header.js";
 import "./prescriptionspage.css";
 
@@ -14,6 +14,7 @@ document.addEventListener("click", (event) => {
 
 export const prescriptionspage = () => {
   setTimeout(renderHeader, 0);
+  setTimeout(initLeftbar, 0);
   return `
 ${leftbar("prescriptions")}
     <div class="right-column-container"> 

@@ -1,16 +1,17 @@
-import { leftbar } from "../../components/leftbar/leftbar.js";
+import { initLeftbar, leftbar } from "../../components/leftbar/leftbar.js";
 import { header, renderHeader } from "../../components/header/header.js";
 import "./messagepage.css";
 
 export const messagepage = () => {
   setTimeout(renderHeader, 0);
+  setTimeout(initLeftbar, 0);
   return `
-${leftbar("chat")}
+${leftbar("message")}
     <div class="right-column-container"> 
 			${header()}
 			<div class="main-container">
 				<div class="message">
-					<div class="message__header text64">Повідомлення</div>
+					<div class="message__header text64 bold">Ваша скринька</div>
 					<div class="message__container box content">
 						<div class="message__container__header">
 							<img src="#" class="avatar" alt="avatar"/>

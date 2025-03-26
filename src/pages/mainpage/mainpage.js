@@ -1,9 +1,33 @@
-import { leftbar } from "../../components/leftbar/leftbar.js";
+import { leftbar, initLeftbar } from "../../components/leftbar/leftbar.js";
 import { header, renderHeader } from "../../components/header/header.js";
 import "./mainpage.css";
+const initActiveRecords = () => {
+  const header = document.querySelector(".active-record__header");
+  const dropdown = document.querySelector(".active-records-dropdown");
 
+  if (header && dropdown) {
+    header.addEventListener("click", (e) => {
+      e.stopPropagation();
+      dropdown.classList.toggle("visible");
+
+      document
+        .querySelectorAll(".notifications-dropdown, .profile-dropdown")
+        .forEach((d) => d.classList.remove("visible"));
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!header.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.classList.remove("visible");
+      }
+    });
+  }
+};
+
+// Обновите mainPage для инициализации
 export const mainPage = () => {
+  setTimeout(initLeftbar, 0);
   setTimeout(renderHeader, 0);
+  setTimeout(initActiveRecords, 0);
   return `
 ${leftbar()}
     <div class="right-column-container"> 
@@ -27,7 +51,7 @@ ${leftbar()}
                         <p class="text16 green">В нас наявна система знижок</p>
                     </div>
                     <div class="box content main-container__column1__content3">
-                    	<div class="text32 bold">Онлайн консультація</div>
+                    	<div class="text32 bold main-container__column1__content3__header">Онлайн консультація</div>
                       <div class="text16 main-container__column1__content3__description">Якщо ви хочите зекономити час то маетє можливість записатись на онлайн прийом у лікаря в форматі Zoom або Google meet</div>
                       <div class="main-container__column1__content3__button-container">
                       	<button class="button">Записатись</button>
@@ -38,14 +62,18 @@ ${leftbar()}
                 <div class="main-container__column2">
                     <div class="box content">
                         <div class="main-container__column2__content1__header">
-                            <div class="text32 bold">
-                                Активні записи
-                                <img class="check-mark-icon" src="images/icons/checkMark.svg" alt="checkMark" />
-                            </div>
-                            <div class="main-container__column2__content1__header__button-container">
-                                <button class="button text24 bold">Записатись</button>
-                            </div>
-                        </div>
+														<div class="active-record__header text32 bold">
+																Активні записи
+																<img class="check-mark-icon" src="images/icons/checkMark.svg" alt="checkMark" />
+																<div class="active-records-dropdown text16 bold">
+																	<div class="dropdown-item">Активні записи</div>
+																	<div class="dropdown-item">Минулі записи</div>
+																</div>
+														</div>
+														<div class="main-container__column2__content1__header__button-container">
+																<button class="button text24 bold">Записатись</button>
+														</div>
+												</div>
                         <div class="active-record content">
                             <div class="active-record__details">
                                 <div class="active-record__info">

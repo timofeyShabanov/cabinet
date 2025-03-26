@@ -1,17 +1,18 @@
-import { leftbar } from "../../components/leftbar/leftbar.js";
+import { initLeftbar, leftbar } from "../../components/leftbar/leftbar.js";
 import { header, renderHeader } from "../../components/header/header.js";
 import "../messagepage/messagepage.css";
 import "../../style.css";
 
 export const rerecognitionpage = () => {
   setTimeout(renderHeader, 0);
+  setTimeout(initLeftbar, 0);
   return `
-${leftbar("prescriptions")}
+${leftbar("rerecognition")}
     <div class="right-column-container"> 
 			${header()}
 			<div class="main-container">
 				<div class="message">
-					<div class="message__header text64">Повторне призначення ліків</div>
+					<div class="message__header text64 bold">Повторне призначення ліків</div>
 					<div class="message__container box content">
 						<div class="message__container__header">
 							<img src="#" class="avatar" alt="avatar"/>

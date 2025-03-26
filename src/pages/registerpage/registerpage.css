@@ -4,20 +4,28 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 90vh;
+    height: 95vh;
+    max-width: 1980px;
 }
 
 .register__container {
-    max-width: 400px;
-    width: 100%;
-    padding: 2rem;
+    width: 850px;
+    height: 850px;
+    padding: 100px;
     box-sizing: border-box;
+}
+
+.register__container__close-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
 }
 
 .register__form {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    margin-top: 48px;
+    gap: 19px;
 }
 
 .register__form-group {
@@ -27,16 +35,19 @@
 .register__form-group input,
 .register__form-group select {
     width: 100%;
-    padding: 12px;
+    padding: 31px 0 32px 62px;
     border: none;
-    background: #F9F9F9;
-    border-radius: 8px;
-    font-size: 16px;
+    background-color: #F9F9F9;
+    border-radius: 10px;
     box-sizing: border-box;
+    color: #000000;
+}
+.register__form-group__date input{
+    padding: 31px 0 32px 32px;
 }
 
 .register__form-group input[type="date"] {
-    padding: 11px;
+    padding: 31px 0 32px 62px;
 }
 
 .register__form-row {
@@ -48,18 +59,72 @@
     flex: 1;
 }
 
-.register__container__close-btn {
-    cursor: pointer;
-    display: flex;
-    justify-content: end;
-    margin-bottom: 1rem;
-}
-
 .register__btn {
-    margin-top: 1rem;
     width: 100%;
     padding: 14px;
+    margin-top: 60px;
+    height: 74px;
 }
+
+@media (max-width: 1200px) {
+    .register__container {
+        width: 650px;
+        height: 650px;
+        padding: 60px;
+    }
+    .register__form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 14px;
+    }
+    .register__btn {
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 700px) {
+    .register__container {
+        width: 350px;
+        height: 580px;
+        padding: 30px;
+    }
+    .register__form-group input,
+    .register__form-group select {
+        padding: 30px 0 30px 25px;
+        font-size: 16px;
+    }
+    .register__form-group__date input{
+        font-size: 12px;
+        padding: 34px 0 34px 12px;
+    }
+    .register__form-group input[type="date"] {
+        padding: 34px 0 32px 12px;
+    }
+}
+@media (max-width: 360px) {
+    .register__container {
+        width: 200px;
+        height: 500px;
+        padding: 15px;
+    }
+    .register__form-group input,
+    .register__form-group select {
+        padding: 25px 0 25px 5px;
+        font-size: 8px;
+    }
+    .register__form-group__date input{
+        font-size: 6px;
+        padding: 27px 0 27px 5px;
+    }
+    .register__form-group input[type="date"] {
+        padding: 25px 0 25px 5px;
+    }
+}
+
 
 
 

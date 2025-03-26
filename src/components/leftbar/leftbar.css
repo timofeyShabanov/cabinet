@@ -4,6 +4,7 @@
     width: 6.5vw;
     max-width: 100px;
     height: 95vh;
+    position: relative;
 }
 
 .logo {
@@ -22,19 +23,104 @@
     justify-content: center;
 }
 
-.left-column__icon.logout-icon {
-    margin-top: auto;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-}
-
 .icon.active {
     filter: invert(45%) sepia(91%) saturate(286%) hue-rotate(93deg);
+}
+
+.left-column__icon__arrow {
+    cursor: pointer;
+    width: 15px;
+    height: 26px;
+}
+
+.left-column__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 800px) {
     .left-column {
         display: none;
     }
+}
+@media (max-height: 700px) {
+    .logo {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .left-column__icon {
+        margin: 10px 0 10px 0;
+    }
+}
+@media (max-height: 600px) {
+    .logo {
+        padding-top: 12px;
+        padding-bottom: 10px;
+    }
+    .left-column__icon {
+        margin: 10px 0 10px 0;
+    }
+}
+@media (max-height: 500px) {
+    .logo {
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    .left-column__icon {
+        margin: 5px 0 5px 0;
+    }
+}
+
+/* leftbar.css */
+.left-column.rotated {
+    border-radius: 0 10px;
+}
+
+.leftbar-dropdown {
+    display: none;
+    position: absolute;
+    left: 100%;
+    height: 95vh;
+    background: white;
+    z-index: 10000;
+    border-radius: 0 10px 10px 0;
+    min-width: 200px;
+}
+
+.leftbar-dropdown.visible {
+    display: block;
+}
+
+.leftbar-dropdown__container {
+    margin-top: 32px
+}
+
+.leftbar-item__logo {
+    cursor: pointer;
+    transition: background 0.3s;
+    white-space: nowrap;
+    margin: 20px 0 20px 0;
+    padding-top: 8px;
+    padding-bottom: 42px;
+}
+
+.leftbar-item {
+    padding: 19px 10px;
+    cursor: pointer;
+    color: #333;
+    transition: background 0.3s;
+    white-space: nowrap;
+    margin: 20px 0 20px 0;
+}
+
+.leftbar-item:hover {
+    background: #f5f5f5;
+}
+
+.left-column__icon__arrow.rotated {
+    transform: rotate(180deg);
+    transition: transform 0.3s;
 }

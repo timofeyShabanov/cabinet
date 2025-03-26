@@ -10,36 +10,32 @@ export const registerpage = () => `
         
         <form class="register__form">
             <div class="register__form-group">
-                <input type="text" placeholder="Прізвище*" required />
+                <input class="text24 bold" type="text" placeholder="Прізвище*" required />
             </div>
-            
             <div class="register__form-group">
-                <input type="text" placeholder="Ім’я*" required />
+                <input class="text24 bold" type="text" placeholder="Ім’я*" required />
             </div>
-            
             <div class="register__form-group">
-                <input type="text" placeholder="По батькові  (Не обов’язково)" />
+                <input class="text24 bold" type="text" placeholder="По батькові  (Не обов’язково)" />
             </div>
-            
             <div class="register__form-row">
                 <div class="register__form-group register__gender-select">
-                    <select>
+                    <select class="text24 bold">
                         <option value="">Стать</option>
                         <option value="male">Чоловіча</option>
                         <option value="female">Жіноча</option>
                     </select>
                 </div>
-                
-                <div class="register__form-group">
+                <div class="register__form-group register__form-group__date">
                     <input 
+                    	class="text24 bold"
                     	placeholder="Дата народження" 
                     	type="text" 
   										onfocus="this.type='date'" 
   										onblur="if(this.value==''){this.type='text'}"/>
                 </div>
             </div>
-            
-            <button onclick="window.location.href='/'" type="submit" class="button register__btn">Продовжити</button>
+            <button class="button text24 bold register__btn" onclick="window.location.href='/'" type="submit">Продовжити</button>
         </form>
     </div>
 </div>

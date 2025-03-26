@@ -1,9 +1,10 @@
-import { leftbar } from "../../components/leftbar/leftbar.js";
+import { initLeftbar, leftbar } from "../../components/leftbar/leftbar.js";
 import { header, renderHeader } from "../../components/header/header.js";
 import "./sciencepage.css";
 
 export const sciencepage = () => {
   setTimeout(renderHeader, 0);
+  setTimeout(initLeftbar, 0);
   return `
 ${leftbar("science")}
     <div class="right-column-container"> 

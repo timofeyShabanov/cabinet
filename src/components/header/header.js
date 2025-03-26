@@ -9,14 +9,16 @@ export const renderHeader = () => {
   if (!headerContainer) return;
 
   if (window.innerWidth <= 800) {
+    // Мобильная версия
     headerContainer.innerHTML = `
       <div class="header-mobile">
         <div class="header-mobile__logout">
+          <img onclick="window.location.href='/'" class="icon" src="images/logo.png" alt="logo"/>
           <img class="icon" src="images/icons/logout.svg" alt="logout" />
         </div>
         <div class="header-mobile__container">
           <div class="header-mobile__container__notification">
-            <img class="icon" src="images/icons/bell.svg" alt="bell" />
+            <img onclick="window.location.href='/mobilemessage'" class="icon bell-icon" src="images/icons/bell.svg" alt="bell" />
           </div>
           <div class="header-mobile__container__burger-menu">
             ${burgermenu()}
@@ -34,7 +36,18 @@ export const renderHeader = () => {
           </button>
         </div>
         <div class="box bell-container">
-          <img class='icon' src="images/icons/bell.svg" alt="bell"/>
+          <img class="icon bell-icon" src="images/icons/bell.svg" alt="bell"/>
+          <div class="notifications-dropdown">
+            <div class="notifications-dropdown__header text32 bold">
+              Повідомлення
+              <span class="close-notifications-btn">
+                <img src="images/icons/cross.svg" alt="cross" />
+              </span>
+            </div>
+            <div class="notifications-dropdown__content text24">
+              <div class="notifications-dropdown__content__item">Наразі повідомлень немає</div>
+            </div>
+          </div>
         </div>
         <div class="profile-card box">
           <img class="check-mark-icon" src="images/icons/checkMark.svg" alt="checkMark" />
@@ -45,19 +58,55 @@ export const renderHeader = () => {
             <div onclick="console.log('Змінити пароль')" class="profile-card__change-password">Змінити пароль</div>
             <div onclick="console.log('Вийти з запису')" class="profile-card__logout">
               <img src="images/icons/logout2.svg" class="icon" alt="logout"/>
-            	Вийти з запису
+              Вийти з запису
             </div>
           </div>
         </div>
       </div>`;
   }
 
+  const bellIcon = document.querySelector(".bell-icon");
+  const notificationsDropdown = document.querySelector(
+    ".notifications-dropdown",
+  );
+
+  if (bellIcon && notificationsDropdown) {
+    bellIcon.addEventListener("click", (event) => {
+      event.stopPropagation();
+      notificationsDropdown.classList.toggle("visible");
+
+      const profileDropdown = document.querySelector(".profile-dropdown");
+      if (profileDropdown) profileDropdown.classList.remove("visible");
+    });
+
+    const closeBtn = notificationsDropdown.querySelector(
+      ".notifications-dropdown__header img",
+    );
+    if (closeBtn) {
+      closeBtn.addEventListener("click", (event) => {
+        event.stopPropagation();
+        notificationsDropdown.classList.remove("visible");
+      });
+    }
+
+    document.addEventListener("click", (event) => {
+      if (
+        !event.target.closest(".bell-container") &&
+        !event.target.closest(".notifications-dropdown")
+      ) {
+        notificationsDropdown.classList.remove("visible");
+      }
+    });
+  }
+
   const profileCard = document.querySelector(".profile-card");
-  const dropdown = document.querySelector(".profile-dropdown");
-  if (profileCard && dropdown) {
+  const profileDropdown = document.querySelector(".profile-dropdown");
+  if (profileCard && profileDropdown) {
     profileCard.addEventListener("click", (event) => {
-      event.stopPropagation(); // Остановка всплытия, чтобы не сработал глобальный обработчик
-      dropdown.classList.toggle("visible");
+      event.stopPropagation();
+      profileDropdown.classList.toggle("visible");
+      notificationsDropdown.classList.remove("visible"); // Закрываем уведомления
+
       const checkMarkVisible = document.querySelector(".check-mark-icon");
       if (checkMarkVisible) checkMarkVisible.classList.toggle("invisible");
 
@@ -68,9 +117,9 @@ export const renderHeader = () => {
     document.addEventListener("click", (event) => {
       if (
         !profileCard.contains(event.target) &&
-        !dropdown.contains(event.target)
+        !profileDropdown.contains(event.target)
       ) {
-        dropdown.classList.remove("visible");
+        profileDropdown.classList.remove("visible");
         const checkMarkVisible = document.querySelector(".check-mark-icon");
         if (checkMarkVisible) checkMarkVisible.classList.remove("invisible");
 
@@ -80,6 +129,7 @@ export const renderHeader = () => {
     });
   }
 
+  // Обработчик поиска
   const searchBtn = document.querySelector("#search-btn");
   if (searchBtn) {
     searchBtn.addEventListener("click", () => {

@@ -15,13 +15,19 @@
     box-sizing: border-box;
 }
 
+.login__container__close-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+}
+
 .login__form {
     display: flex;
     flex-direction: column;
     margin-top: 95px;
 }
 
-.login__form-group .login__form-password {
+.login__form-login .login__form-password {
     width: 100%;
 }
 
@@ -29,47 +35,29 @@
     margin-top: 60px;
 }
 
-.login__form-group input,
-.login__form-group select {
+.login__form input{
     width: 100%;
-    padding: 12px;
+    padding: 31px 0 32px 62px;
     border: none;
     background-color: #F9F9F9;
-    border-radius: 8px;
-    font-size: 16px;
+    border-radius: 10px;
     box-sizing: border-box;
-}
-
-.login__form-group input[type="date"] {
-    padding: 11px;
-}
-
-.login__form-row {
-    display: flex;
-    gap: 1rem;
-}
-
-.login__form-row > * {
-    flex: 1;
-}
-
-.login__container__close-btn {
-    cursor: pointer;
-    display: flex;
-    justify-content: end;
-    margin-bottom: 1rem;
+    color: #000000;
 }
 
 .login__btn {
-    margin-top: 1rem;
+    margin-top: 142px;
     width: 100%;
-    padding: 14px;
+    padding: 10px;
+    border-radius: 10px;
+    height: 74px;
 }
 
 .login__to-register-btn{
     display: flex;
     justify-content: center;
     cursor: pointer;
+    margin-top: 45px;
 }
 
 @media (max-width: 1200px) {
@@ -78,20 +66,37 @@
         height: 650px;
         padding: 60px;
     }
+
+    .login__form {
+        margin-top: 80px;
+    }
+
+    .login__form input{
+        padding: 24px 0 24px 42px;
+    }
+
+    .login__form-password {
+        margin-top: 50px;
+    }
+
+    .login__btn {
+        height: 60px;
+        margin-top: 80px;
+    }
 }
 
 @media (max-width: 700px) {
     .login__container {
         width: 350px;
-        height: 350px;
+        height: 580px;
         padding: 30px;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 300px) {
     .login__container {
         width: 200px;
-        height: 300px;
+        height: 500px;
         padding: 15px;
     }
 }

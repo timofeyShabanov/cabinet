@@ -9,6 +9,7 @@ import { chatpage } from "./pages/chatpage/chatpage.js";
 import { messagepage } from "./pages/messagepage/messagepage.js";
 import { rerecognitionpage } from "./pages/rerecognitionpage/rerecognitionpage.js";
 import { reviewpage } from "./pages/reviewpage/reviewpage.js";
+import { mobilemessagepage } from "./pages/mobilmessagepage/mobilemessagepage.js";
 
 const routes = {
   "/": mainPage,
@@ -21,6 +22,7 @@ const routes = {
   "/message": messagepage,
   "/rerecognition": rerecognitionpage,
   "/review": reviewpage,
+  "/mobilemessage": mobilemessagepage,
 };
 
 if (window.matchMedia("(max-width: 768px)").matches) {

@@ -9,16 +9,16 @@ export const loginpage = () => `
         </span>
         
         <form class="login__form">
-            <div class="login__form-group">
-                <input type="text" placeholder="Логін" required />
+            <div class="login__form-login">
+                <input class="text24 bold" type="text" placeholder="Логін" required />
             </div>
             
             <div class="login__form-password">
-                <input type="text" placeholder="Пароль" required />
+                <input class="text24 bold" type="text" placeholder="Пароль" required />
             </div>
 
-            <button onclick="window.location.href='/'" type="submit" class="button login__btn">Увійти</button>
-            <div onclick="window.location.href='/register'" class="login__to-register-btn">Cтворити</div>
+            <button class="login__btn button text32 bold" onclick="window.location.href='/'" type="submit" >Увійти</button>
+            <div class="login__to-register-btn text20" onclick="window.location.href='/register'">Cтворити</div>
         </form>
     </div>
 </div>`;

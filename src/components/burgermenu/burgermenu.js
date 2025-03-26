@@ -27,6 +27,10 @@ export const burgermenu = () => `
             	Чат
             	<img src="images/icons/chat.svg" class="icon" alt="chat"/>
             </div>
+             <div onclick="window.location.href='/'" class="off-screen-menu__container__chat">
+            	Головна сторінка
+            	<img src="images/logo.png" class="icon" alt='logo'/>
+            </div>
             <div onclick="console.log('Змінити фото профілю')"  class="off-screen-menu__container__photo">Змінити фото профілю</div>
             <div onclick="console.log('Змінити пароль')" class="off-screen-menu__container__password">Змінити пароль</div>
             <div onclick="console.log('Вийти з запису')" class="off-screen-menu__container__logout">

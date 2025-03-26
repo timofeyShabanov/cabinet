@@ -1,10 +1,11 @@
-import { leftbar } from "../../components/leftbar/leftbar.js";
+import { initLeftbar, leftbar } from "../../components/leftbar/leftbar.js";
 import { header, renderHeader } from "../../components/header/header.js";
 import "../../style.css";
 import "./chatpage.css";
 
 export const chatpage = () => {
   setTimeout(renderHeader, 0);
+  setTimeout(initLeftbar, 0);
   return `
 ${leftbar("chat")}
     <div class="right-column-container"> 
