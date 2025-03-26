@@ -48,6 +48,24 @@
     box-sizing: border-box;
     color: #000000;
 }
+.register__form-group select {
+    width: 100%;
+    padding: 31px 0 32px 62px;
+    border: none;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #000000;
+    padding-right: 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path fill="%23000000" d="M7 10l5 5 5-5H7z"/></svg>') no-repeat right 10px center;
+    background-size: 20px;
+    background-color: #F9F9F9;
+    outline: none;
+}
+
 .register__form-group__date input{
     padding: 31px 0 32px 32px;
 }
