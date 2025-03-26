@@ -40,7 +40,7 @@ ${leftbar("chat")}
 											contenteditable="true"></div>
 							</form>
 							<span>
-									<button class="button bold" id="submit-button">Надіслати</button>
+									<button class="button bold text20" id="submit-button">Надіслати</button>
 							</span>
 						</div>
 					</div>
