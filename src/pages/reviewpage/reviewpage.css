@@ -38,6 +38,7 @@
     cursor: text;
     outline: none;
     border: none;
+    overflow-y: auto;
 }
 
 .review__container__button {
@@ -51,11 +52,23 @@
 
 @media (max-width: 500px) {
     .review__container {
-        padding: 30px 25px;
+        padding: 50px
+    }
+
+    .review__container__content__text {
+        height: 270px;
+        overflow-y: auto;
     }
 
     .review__container__button button {
         font-size: 20px;
+    }
+
+    .review__container__button {
+        height: 74px;
+    }
+    .review__container__button button{
+        height: 74px;
     }
 }
 

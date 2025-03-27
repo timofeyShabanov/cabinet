@@ -197,13 +197,13 @@
 
 @media (max-width: 1980px) {
     .notifications-dropdown {
-        width: 26vw;
+        width: 28vw;
     }
 }
 
 @media (max-width: 950px) {
     .notifications-dropdown {
-        width: 400%;
+        width: 450%;
     }
 }
 

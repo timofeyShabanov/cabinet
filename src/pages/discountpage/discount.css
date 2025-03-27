@@ -18,9 +18,10 @@
 @media (max-width: 800px) {
     .discount-card__advantages__list {
         background: #FFFFFF;
-        padding: 30px 40px;
+        padding: 25px 50px;
         border-radius: 10px;
     }
 }
+
 
 
