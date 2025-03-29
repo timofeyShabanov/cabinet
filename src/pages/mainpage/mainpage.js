@@ -61,7 +61,7 @@ ${leftbar()}
                 </div>
 
                 <div class="main-container__column2">
-                    <div class="box content">
+                    <div class="box content main-container__column2__content1">
                         <div class="main-container__column2__content1__header">
 														<div class="active-record__header text32 bold">
 																Активні записи
@@ -94,21 +94,28 @@ ${leftbar()}
                         </div>
                     </div>
                     <div class="box content main-container__column2__content2">
-                       <div class="text32 bold main-container__column2__content2">Лікарські призначення</div>
-                        <div class="main-container__column2__content2__block content">
-                            <div class="text24 bold main-container__column2__content2__block__name">Іван Іванович</div>
-                            <div class="text16 main-container__column2__content2__block__text">Пройти курс лікування під моїм контролем</div>
-                            <div class="text24 bold main-container__column2__content2__block__date">01.11.2024</div>
-                        </div>
-                        <div class="main-container__column2__content2__block content">
-                            <div class="text24 bold main-container__column2__content2__block__name">Іван Іванович</div>
-                            <div class="text16 main-container__column2__content2__block__text">Пройти курс лікування під моїм контролем</div>
-                            <div class="text24 bold main-container__column2__content2__block__date">01.11.2024</div>
-                        </div>
-                        <div class="main-container__column2__content2__block content">
-                            <div class="text24 bold main-container__column2__content2__block__name">Іван Іванович</div>
-                            <div class="text16 main-container__column2__content2__block__text">Пройти курс лікування під моїм контролем</div>
-                            <div class="text24 bold main-container__column2__content2__block__date">01.11.2024</div>
+                        <div class="text32 bold main-container__column2__content2__header">Лікарські призначення</div>
+                        <div class="main-container__column2__content2__container">
+                          <div class="main-container__column2__content2__block content">
+                              <div class="text24 bold main-container__column2__content2__block__name">Іван Іванович</div>
+                              <div class="text16 main-container__column2__content2__block__text">Пройти курс лікування під моїм контролем</div>
+                              <div class="text24 bold main-container__column2__content2__block__date">01.11.2024</div>
+                          </div>
+                          <div class="main-container__column2__content2__block content">
+                              <div class="text24 bold main-container__column2__content2__block__name">Іван Іванович</div>
+                              <div class="text16 main-container__column2__content2__block__text">Пройти курс лікування під моїм контролем</div>
+                              <div class="text24 bold main-container__column2__content2__block__date">01.11.2024</div>
+                          </div>
+                          <div class="main-container__column2__content2__block content">
+                              <div class="text24 bold main-container__column2__content2__block__name">Іван Іванович</div>
+                              <div class="text16 main-container__column2__content2__block__text">Пройти курс лікування під моїм контролем</div>
+                              <div class="text24 bold main-container__column2__content2__block__date">01.11.2024</div>
+                          </div>
+                          <div class="main-container__column2__content2__block content">
+                              <div class="text24 bold main-container__column2__content2__block__name">Іван Іванович</div>
+                              <div class="text16 main-container__column2__content2__block__text">Пройти курс лікування під моїм контролем</div>
+                              <div class="text24 bold main-container__column2__content2__block__date">01.11.2024</div>
+                          </div>
                         </div>
                     </div>
                 </div>

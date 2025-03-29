@@ -29,7 +29,10 @@
 .main-container__content3__message-container button {
     margin-top: 2vh;
     height: 5vh;
-    width: 20vw;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 500px) {

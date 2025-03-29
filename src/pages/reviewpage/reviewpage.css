@@ -8,8 +8,7 @@
 }
 
 .review__container {
-    max-width: 500px;
-    width: 100%;
+    width: 50%;
     padding: 4.07vw 4.08vw 4.07vw 4.08vw;
     box-sizing: border-box;
 }
@@ -50,9 +49,10 @@
     width: 100%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
     .review__container {
-        padding: 50px
+        padding: 50px;
+        width: 70%;
     }
 
     .review__container__content__text {
@@ -69,6 +69,16 @@
     }
     .review__container__button button{
         height: 74px;
+    }
+}
+
+@media (max-width: 400px) {
+    .review__container {
+        width: 90%;
+    }
+    .review__container__content__text {
+        height: 270px;
+        overflow-y: auto;
     }
 }
 
