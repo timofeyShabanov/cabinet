@@ -39,6 +39,7 @@ export const registerpage = () => `
                 </div>
             </div>
             <button class="button text24 bold register__btn" onclick="window.location.href='/'" type="submit">Продовжити</button>
+						<div class="register__subtext text20" onclick="window.location.href='/login'"> Вже є аккаунт </div>
         </form>
     </div>
 </div>

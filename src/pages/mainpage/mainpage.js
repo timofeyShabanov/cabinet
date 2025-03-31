@@ -55,7 +55,7 @@ ${leftbar()}
                     	<div class="text32 bold main-container__column1__content3__header">Онлайн консультація</div>
                       <div class="text16 main-container__column1__content3__description">Якщо ви хочите зекономити час то маетє можливість записатись на онлайн прийом у лікаря в форматі Zoom або Google meet</div>
                       <div class="main-container__column1__content3__button-container">
-                      	<button class="button">Записатись</button>
+                      	<button class="button text20">Записатись</button>
                       </div>
                     </div>
                 </div>

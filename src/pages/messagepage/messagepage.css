@@ -35,7 +35,7 @@
 }
 
 .message__container__button button {
-    width: 20vw;
+    width: 18%;
 }
 
 @media (max-width: 500px) {

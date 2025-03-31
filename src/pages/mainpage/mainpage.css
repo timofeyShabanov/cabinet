@@ -94,7 +94,11 @@
 
 .main-container__column1__content3__button-container button {
     width: 100%;
-    font-size: 18px;
+}
+@media (min-width: 1800px) {
+    .main-container__column1__content3__button-container button {
+       height: 50px;
+    }
 }
 
 .main-container__column1__content3__button-container button:hover {
